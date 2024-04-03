@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <style>html { opacity: 0; }</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Home</title>
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css?_v=20240403114137" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/main.min.css?_v=20240403114137">
+
+  <script defer="defer" src="js/main.min.js?_v=20240403114137"></script>
+</head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+  <div class="header__container">
+      <div class="header_wrapper">
+          <a href="/" class="header__logo">Logo</a>
+          <div class="header__menu">
+              <ul class="menu">
+                  <li class="active"><a href="#">Buy Voucher</a></li>
+                  <li><a href="#">Redeem Voucher</a></li>
+                  <li><a href="#">O nás</a></li>
+                  <li><a href="#">Kontakty</a></li>
+              </ul>
+          </div>
+          <div class="header__exchange">
+              <span>Currency</span>
+              <p>1€ =1,2usdt</p>
+          </div>
+          <a href="#" class="header__link">Contuct us</a>
+          <button class="header__burger icon-menu">
+  <span></span>
+</button>
+      </div>
+  </div>
+</header>
+
+      <main class="page">
+        <div data-observ></div>
+        
+        <section class="intro">
+    <div class="intro__container">
+        <div class="intro_wrapper">
+            <div class="intro_left">
+                <div class="intro__subtitle">Buy Voucher</div>
+                <div class="intro__title">Best place<br>to buy over crypto</div>
+                <ul class="intro__list">
+                    <li>Zero extra costs</li>
+                    <li>No verification in service</li>
+                    <li>5+ payments optoons</li>
+                </ul>
+                <div class="intro__images">
+                    <picture><source srcset="images/img1.webp" type="image/webp"><img src="images/img1.png" alt=""></picture>
+                    <picture><source srcset="images/img2.webp" type="image/webp"><img src="images/img2.png" alt=""></picture>
+                    <picture><source srcset="images/img3.webp" type="image/webp"><img src="images/img3.png" alt=""></picture>
+                    <picture><source srcset="images/img4.webp" type="image/webp"><img src="images/img4.png" alt=""></picture>
+                    <picture><source srcset="images/img5.webp" type="image/webp"><img src="images/img5.png" alt=""></picture>
+                </div>
+                <div class="intro__numbers">
+                    <div class="number">
+                        <img src="images/ticket-01.svg" alt="">
+                        <span>Number of vouchers</span>
+                        <p>1205</p>
+                    </div>
+                    <div class="number">
+                        <img src="images/currency-coin-dollar.svg" alt="">
+                        <span>Total USDT</span>
+                        <p>2 800 000 $</p>
+                    </div>
+                </div>
+            </div>
+            <div class="intro_right">
+                <div class="intro_voucher z-2">
+                    <div class="intro_voucher_wrapper">
+                        <div class="tabs" data-tabs="tabs-example">
+                            <div class="tabs__nav">
+                                <button class="tabs__trigger" type="button">Buy Voucher</button>
+                                <button class="tabs__trigger" type="button">Redeem Voucher</button>
+                                <button class="tabs__trigger" type="button">Check validity</button>
+                            </div>
+                        
+                            <div class="tabs__content">
+                                <div class="tabs__panel">
+                                    <div class="buy-content">
+                                        <div class="buy-box">
+                                            <div class="buy-box__title">You pay <i>€</i></div>
+                                            <div class="buy-box__pay">
+                                                <label>
+                                                    <input name="pay" type="radio">
+                                                    <span>1000 <i>€</i></span>
+                                                </label>
+                                                <label>
+                                                    <input name="pay" type="radio">
+                                                    <span>2000 <i>€</i></span>
+                                                </label>
+                                                <label>
+                                                    <input name="pay" type="radio">
+                                                    <span>5000 <i>€</i></span>
+                                                </label>
+                                                <label>
+                                                    <input name="pay" type="radio">
+                                                    <span>Other amount <i>€</i></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="buy-box">
+                                            <div class="buy-box__title">Payment methode</div>
+                                            <div class="buy-box__methode">
+                                                <label>
+                                                    <input name="pay" type="radio">
+                                                    <span><picture><source srcset="images/visamc.webp" type="image/webp"><img src="images/visamc.png" alt=""></picture> Card Payment</span>
+                                                </label>
+                                                <label>
+                                                    <input name="pay" type="radio">
+                                                    <span><picture><source srcset="images/gpay.webp" type="image/webp"><img src="images/gpay.png" alt=""></picture></span>
+                                                </label>
+                                                <label>
+                                                    <input name="pay" type="radio">
+                                                    <span><picture><source srcset="images/apay.webp" type="image/webp"><img src="images/apay.png" alt=""></picture></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="buy-input">
+                                            <div class="buy-input__state">
+                                                <div class="personal-use">
+                                                    <img src="images/user-profile-03.svg" alt="">
+                                                    <span>Personal use</span>
+                                                </div>
+                                                <div class="gift">
+                                                    <img src="images/gift-01.svg" alt="">
+                                                    <span>Gift</span>
+                                                </div>
+                                            </div>
+                                            <div class="buy-input_box">
+                                                <span>USDT wallet (ERC 20)</span>
+                                                <label><input type="E-mail"></label>
+                                            </div>
+                                            <div class="buy-input-row">
+                                                <div class="buy-input_box">
+                                                    <span>E-mail</span>
+                                                    <label><input type="E-mail"></label>
+                                                </div>
+                                                <div class="buy-input_box">
+                                                    <span>Your phone number</span>
+                                                    <label><input type="text"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="buy-button">
+                                            <button>
+                                                <span>Confirm and pay</span>
+                                            </button>
+                                        </div>
+                                        <div class="buy-strih">
+                                            <picture><source srcset="images/strih.webp" type="image/webp"><img src="images/strih.png" alt=""></picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__panel">
+                                    <div class="redeem-content">
+                                        <div class="redeem__text">Enter the code in "Voucher Code". Redeem it, and we'll add its value in USDT to your ERC20 crypto wallet.</div>
+                                        <div class="redeem-box">
+                                            <div class="redeem-box__title">Voucher code</div>
+                                            <label class="redeem-box__input">
+                                                <input type="text">
+                                            </label>
+                                            <a class="qrcode" href="#"><img src="images/qrcode.svg" alt=""></a>
+                                        </div>
+                                        <div class="redeem-box">
+                                            <div class="redeem-box__title">USDT wallet (ERC 20)</div>
+                                            <label class="redeem-box__input">
+                                                <input type="text">
+                                            </label>
+                                        </div>
+                                        <div class="redeem-box">
+                                            <div class="redeem-box__title">E-mail</div>
+                                            <label class="redeem-box__input">
+                                                <input type="text">
+                                            </label>
+                                        </div>
+                                        <div class="redeem-box">
+                                            <label class="redeem-box__checkbox">
+                                                <input type="checkbox">
+                                                <i></i>
+                                                <span>I agree to the terms and conditions</span>
+                                            </label>
+                                        </div>
+                                        <div class="redeem-button">
+                                            <button type="submit">Send crypto</button>
+                                        </div>
+                                        <div class="redeem-strih">
+                                            <picture><source srcset="images/strih.webp" type="image/webp"><img src="images/strih.png" alt=""></picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__panel">
+                                    <div class="check-content">
+                                        <div class="check__text">If you want to check your voucher, we will show you the validity of your credits and other conditions.</div>
+                                        <div class="check-status">
+                                            <div>Voucher status</div>
+                                            <ul>
+                                                <li>
+                                                    <p>Price voucher:</p>
+                                                    <span>1000 €</span>
+                                                </li>
+                                                <li>
+                                                    <p>Currency:</p>
+                                                    <span>1€ =1,2 USDT</span>
+                                                </li>
+                                                <li>
+                                                    <p>Voucher balance:</p>
+                                                    <span>1200 USDT</span>
+                                                </li>
+                                                <li>
+                                                    <p>Date inspiration:</p>
+                                                    <span class="green">19.04.2024</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="check-code">
+                                            <span>Voucher code</span>
+                                            <label>
+                                                <input type="text">
+                                            </label>
+                                            <a href="#"><img src="images/qrcode.svg" alt=""></a>
+                                        </div>
+                                        <div class="check-button">
+                                            <button>
+                                                <img src="images/arrow-left.svg" alt="">
+                                                <span>Back Redeem Voucher</span>
+                                            </button>
+                                        </div>
+                                        <div class="check-strih">
+                                            <picture><source srcset="images/strih.webp" type="image/webp"><img src="images/strih.png" alt=""></picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+                <div class="intro_voucher pos-a z-1">
+                    <div class="before"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="works">
+    <div class="works__container">
+        <div class="works_wrapper">
+            <div class="works__subtitle">Buy Voucher</div>
+            <div class="works__title">How it works</div>
+            <div class="works__description">A brief description of how our service works<br>
+                and how everything works</div>
+            <ul class="works__list">
+                <li>
+                    <picture><source srcset="images/work-1.webp" type="image/webp"><img src="images/work-1.png" alt=""></picture>
+                    <span>Buy Voucher</span>
+                    <p>You buy a voucher for fiat money using a convenient payment method</p>
+                </li>
+                <li>
+                    <picture><source srcset="images/work-2.webp" type="image/webp"><img src="images/work-2.png" alt=""></picture>
+                    <span>Redeem Voucher</span>
+                    <p>You enter the voucher number and the email of the person who sent it</p>
+                </li>
+                <li>
+                    <picture><source srcset="images/work-3.webp" type="image/webp"><img src="images/work-3.png" alt=""></picture>
+                    <span>You get USDT</span>
+                    <p>You receive USDT<br>
+                        to your specified wallet</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+        <section class="voucher">
+    <div class="voucher__container">
+        <div class="before"></div>
+        
+
+        <div class="voucher_wrapper p20 z-2">
+            <div class="voucher_left">
+                <div class="voucher_info">
+                    <div class="info__title">Logo</div>
+                    <div class="info__subtitle">Redeem this voucher<br>for <span>5000 USDT</span></div>
+                    <div class="info_row">
+                        <div class="info__qrcode">
+                            <picture><source srcset="images/qr.webp" type="image/webp"><img src="images/qr.png" alt=""></picture>
+                        </div>
+                        <ul class="info__contacts">
+                            <li><img src="images/globe.svg" alt=""><span>www.sitename.com</span></li>
+                            <li><img src="images/phone-call-01.svg" alt=""><span>+3 120 345 67 89</span></li>
+                            <li><img src="images/mail-02.svg" alt=""><span>Mail_mail@gmail.com</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="voucher_center">
+                <div class="voucher_table">
+                    <div class="voucher_row">
+                        <div class="voucher__box">
+                            <span>Price voucher:</span>
+                            <p>1000 €</p>
+                        </div>
+                        <div class="voucher__box">
+                            <span>Currency:</span>
+                            <p>1€ =1,2 USDT</p>
+                        </div>
+                    </div>
+                    <div class="voucher_row">
+                        <div class="voucher__box">
+                            <span>Voucher balance:</span>
+                            <p>1200 USDT</p>
+                        </div>
+                        <div class="voucher__box">
+                            <span>Date inspiration:</span>
+                            <p>19.04.2024</p>
+                        </div>
+                    </div>
+                    <div class="voucher__box">
+                        <span>USDT wallet</span>
+                        <p>0x3efd5b26 . . . 33c631d44b9ad <a href="#"><img src="images/arrow-up-right-white.svg" alt=""></a></p>
+                    </div>
+                    <div class="voucher__box">
+                        <span>E-mail</span>
+                        <p>big_money@gmail.com</p>
+                    </div>
+                    <div class="voucher__box">
+                        <span>Phone</span>
+                        <p>+31203456789</p>
+                    </div>
+                </div>
+            </div>
+            <div class="voucher_right">
+                <div class="voucher_text">If you enter your wallet details incorrectly and fail to verify them, our company bears no responsibility for any resulting issues. Please exercise utmost caution. The USDT should be spent on positive endeavors, free from any schemes or malpractices. Stay vigilant and responsible.</div>
+            </div>
+        </div>
+
+        <div class="pos-a z-1 voucher_wrapper">
+            <div class="voucher_right">
+                <div></div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="faq">
+    <div class="faq__container">
+        <div class="faq_wrapper">
+            <div class="faq__subtitle">Buy Voucher</div>
+            <div class="faq__title">FAQ</div>
+            <div class="faq__description">Here you can find answers to the most frequently asked questions about our service.</div>
+            <div class="faq__accordion">
+                <div class="accordion">
+                    <div class="accordion__item">
+                        <div class="accordion__header">Apakah aplikasi ini sudah dapat izin dari MUI?</div>
+                        <div class="accordion__content">
+                            <p>Ya gratis dong, masa aplikasi chat aja berbayar sih. Lo kalo nanya yang bener dong. Bayangin aja kalo aplikasi ini berbayar, masa pas chat lo harus bayar setiap karakter. Kalo lo mau bayar mending pake MMS aja dah.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__header">Apakah aplikasi ini gratis?</div>
+                        <div class="accordion__content">
+                            <p>Ya gratis dong, masa aplikasi chat aja berbayar sih. Lo kalo nanya yang bener dong. Bayangin aja kalo aplikasi ini berbayar, masa pas chat lo harus bayar setiap karakter. Kalo lo mau bayar mending pake MMS aja dah.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__header">Apakah data saya akan dijual ke agen khusus US?</div>
+                        <div class="accordion__content">
+                            <p>Ya gratis dong, masa aplikasi chat aja berbayar sih. Lo kalo nanya yang bener dong. Bayangin aja kalo aplikasi ini berbayar, masa pas chat lo harus bayar setiap karakter. Kalo lo mau bayar mending pake MMS aja dah.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__header">Kenapa bumi muter? Apa karena di depan ada yang nikah?</div>
+                        <div class="accordion__content">
+                            <p>Ya gratis dong, masa aplikasi chat aja berbayar sih. Lo kalo nanya yang bener dong. Bayangin aja kalo aplikasi ini berbayar, masa pas chat lo harus bayar setiap karakter. Kalo lo mau bayar mending pake MMS aja dah.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__header">Gimana caranya supaya si Rizal mau bikin konten buat Array ID?</div>
+                        <div class="accordion__content">
+                            <p>Ya gratis dong, masa aplikasi chat aja berbayar sih. Lo kalo nanya yang bener dong. Bayangin aja kalo aplikasi ini berbayar, masa pas chat lo harus bayar setiap karakter. Kalo lo mau bayar mending pake MMS aja dah.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__header">Pertanyaan di atas gabakal ada yang bisa jawab sih</div>
+                        <div class="accordion__content">
+                            <p>Ya gratis dong, masa aplikasi chat aja berbayar sih. Lo kalo nanya yang bener dong. Bayangin aja kalo aplikasi ini berbayar, masa pas chat lo harus bayar setiap karakter. Kalo lo mau bayar mending pake MMS aja dah.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__header">Kenapa game epep burik, bang?</div>
+                        <div class="accordion__content">
+                            <p>Ya gratis dong, masa aplikasi chat aja berbayar sih. Lo kalo nanya yang bener dong. Bayangin aja kalo aplikasi ini berbayar, masa pas chat lo harus bayar setiap karakter. Kalo lo mau bayar mending pake MMS aja dah.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+      </main>
+
+      <footer class="footer">
+  <div class="footer__container">
+    <div class="footer_wrapper">
+      <div class="footer_left">
+        <div>
+          <picture><source srcset="images/footer-img-1.webp" type="image/webp"><img src="images/footer-img-1.png" alt=""></picture>
+          <span>Chat N’ Rechat</span>
+        </div>
+        <p>Actually, there are so many chat applications that are better than this, therefore it is better to use others instead of using this application.</p>
+      </div>
+      <div class="footer_center">
+        <span>Sitemap</span>
+        <nav>
+          <a href="#">Buy Voucher</a>
+          <a href="#">Redeem Voucher</a>
+          <a href="#">O nás</a>
+          <a href="#">FAQ</a>
+          <a href="#">Kontakty</a>
+        </nav>
+      </div>
+      <div class="footer_right">
+        <span>Stay Connected</span>
+        <p>Lihat kami pansos di sosial media berikut:</p>
+        <ul>
+          <li><a href="#"><img src="images/instagram.svg" alt=""></a></li>
+          <li><a href="#"><img src="images/facebook.svg" alt=""></a></li>
+          <li><a href="#"><img src="images/twitter.svg" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js?_v=20240403114137" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <div class="popup" data-popup="popup-1" data-close-overlay>
+    <div class="popup__wrapper" data-close-overlay>
+        <div class="popup__content">
+            <button class="button-close popup__close" type="button">x</button>
+            <div class="popup__body">
+                <div class="form">
+                    <div class="form__title">Take your industrial cleaning to the future</div>
+                    <div class="form_inner">
+                        <label class="form__input">
+                            <input type="text" placeholder="Name">
+                        </label>
+                        <label class="form__input">
+                            <input type="text" placeholder="Phone number">
+                        </label>
+                        <label class="form__input">
+                            <input type="text" placeholder="Email">
+                        </label>
+                        <label class="form__button">
+                            <button type="submit">Request a demo</button>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  </body>
+</html>

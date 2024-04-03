@@ -1,0 +1,419 @@
+.voucher {
+    padding: 150px 0 100px;
+
+    @include media-mx(991) {
+        padding: 50px 0;
+    }
+
+    &__container {
+        position: relative;
+    }
+
+    .z-1 {
+        z-index: 1;
+    }
+    .z-2 {
+        z-index: 2;
+    }
+
+    .before {
+        position: absolute;
+        bottom: -43px;
+        left: -100px;
+        z-index: -1;
+        width: 249px;
+        height: 238px;
+        background: url('../images/mony2.png') no-repeat center / contain;
+
+        @include media-mx(991) {
+            display: none;
+        }
+    }
+
+    &_wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        
+        background-image: url('../images/bg-voucher-blue.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &.p20 {
+            @include media-mn(992) {
+                padding: 20px;
+            }
+        }
+
+        @include media-mx(991) {
+           flex-direction: column;
+           max-width: 470px;
+           height: 650px;
+           margin: 0 auto;
+           padding: 20px 40px 40px;
+           background-image: none;
+           background: #4A72FF;
+        }
+        @include media-mx(475) {
+            padding: 20px 30px;
+        }
+
+        &.pos-a {
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            width: 100%;
+            height: 100%;
+            transform: rotate(5deg);
+
+            @include media-mx(991) {
+                display: none;
+            }
+        }
+    }
+
+    &_left {
+        position: relative;
+        width: 45%;
+
+        @include media-mx(991) {
+            width: 100%;
+            height: 35%;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: -30px;
+                left: -50px;
+                width: 20px;
+                height: 20px;
+                background: white;
+                border-radius: 50%;
+
+                @include media-mx(475) {
+                    left: -40px;
+                }
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                top: -30px;
+                right: -50px;
+                background: white;
+                border-radius: 50%;
+
+                @include media-mx(475) {
+                    right: -40px;
+                }
+            }
+        }
+        
+        .voucher_img {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: 0 auto;
+
+            img {
+                max-width: 441px;
+                width: 100%;
+                height: auto;
+    
+                @include media-mx(991) {
+                    max-width: 100%;
+                    width: 200px;
+                }
+            }
+        }
+
+        .voucher_info {
+            display: flex;
+            flex-direction: column;
+            padding: 60px ;
+            width: 100%;
+            margin: 0 auto;
+
+            @include media-mx(991) {
+                padding: 0;
+            }
+
+            .info__title {
+                margin-bottom: 20px;
+                color: white;
+                font-size: 34px;
+                @include fontDM;
+                font-weight: 700;
+                line-height: 44px;
+
+                @include media-mx(991) {
+                    margin-bottom: 10px;
+                    font-size: 24px;
+                }
+            }
+            .info__subtitle {
+                margin-bottom: 20px;
+                color: white;
+                @include fontDM;
+                font-size: 28px;
+                line-height: 42px;
+
+                @include media-mx(991) {
+                    margin-bottom: 10px;
+                    line-height: 22px;
+                    font-size: 18px;
+                }
+
+                span {
+                    font-weight: 700;
+                }
+            }
+            .info_row {
+                display: flex;
+                gap: 30px;
+            }
+            .info__qrcode {
+
+                img {
+                    max-width: 100%;
+                    width: 120px;
+                    height: 120px;
+
+                    @include media-mx(991) {
+                        width: 70px;
+                        height: 70px;
+                    }
+                }
+            }
+            .info__contacts {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+
+                        @include media-mx(991) {
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+
+                    span {
+                        color: white;
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+    &_center {
+        position: relative;
+        padding: 40px 50px;
+        width: 45%;
+
+        @include media-mx(991) {
+            width: 100%;
+            flex: 1;
+            padding: 30px 0;
+            border-top: 1px solid rgba(white, .3);
+            border-bottom: 1px solid rgba(white, .3);
+            
+            &:before {
+                content: '';
+                position: absolute;
+                top: -30px;
+                left: -50px;
+                width: 20px;
+                height: 20px;
+                background: white;
+                border-radius: 50%;
+
+                @include media-mx(475) {
+                    left: -40px;
+                }
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                top: -30px;
+                right: -50px;
+                background: white;
+                border-radius: 50%;
+
+                @include media-mx(475) {
+                    right: -40px;
+                }
+            }
+        }
+
+        .voucher_table {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            // padding: 40px 0;
+        }
+
+        .voucher_row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .voucher__box {
+            display: flex;
+            flex-direction: column;
+            color: white;
+
+            span {
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            p {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                @include fontDM;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 20px;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 16px;
+                        height: 16px;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 15px;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 10%;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        color: white;
+        @include fontDM;
+        font-size: 28px;
+        line-height: 42px;
+
+        @include media-mx(991) {
+            line-height: 28px;
+        }
+    }
+
+    &__description {
+        margin-bottom: 40px;
+        color: white;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: max-content;
+        padding: 10px 60px;
+        background: #FFD12D;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    &_right {
+        position: relative;
+        flex: 1;
+        padding: 0 15px;
+        margin-left: auto;
+
+        @include media-mx(991) {
+            width: 100%;
+            height: 100px;
+            flex: 0;
+            margin: auto;
+            padding-top: 20px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: -30px;
+                left: -50px;
+                width: 20px;
+                height: 20px;
+                background: white;
+                border-radius: 50%;
+
+                @include media-mx(475) {
+                    left: -40px;
+                }
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                top: -30px;
+                right: -50px;
+                background: white;
+                border-radius: 50%;
+
+                @include media-mx(475) {
+                    right: -40px;
+                }
+            }
+        }
+
+        .voucher_text {
+            width: 100%;
+            max-height: 350px;
+            width: 100%;
+            color: white;
+            font-size: 10px;
+            line-height: 12px;
+
+            @include media-mn(992) {
+                writing-mode: vertical-rl;
+            }
+        }
+
+        .voucher__strih {
+            width: 58px;
+            height: 224px;
+            background: url('../images/strih-white.png') no-repeat center / cover;
+
+            @include media-mx(991) {
+                max-width: 224px;
+                width: 100%;
+                height: 58px;
+                margin: auto;
+                background: url('../images/strih-white-90.png') no-repeat center / cover;
+            }
+        }
+    }
+}
