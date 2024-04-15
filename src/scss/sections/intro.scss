@@ -11,7 +11,7 @@
             padding: 90px 0;
         }
         @include media-mx(767) {
-            padding: 50px 0;
+            padding: 90px 0 50px;
         }
     }
 
@@ -356,6 +356,11 @@
                             @include media-mx(475) {
                                 font-size: 0;
                             }
+
+                            img {
+                                max-width: 100%;
+                                height: auto;
+                            }
                         }
                     }
                 }
@@ -369,7 +374,92 @@
 
                 &__state {
                     position: absolute;
-                    display: none;
+                    top: 15px;
+                    right: 0;
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+
+                    .state {
+                        position: relative;
+                        cursor: pointer;
+
+                        input {
+                            position: absolute;
+                            opacity: 0;
+                            visibility: hidden;
+
+                            &:checked ~ span {
+                                color: #4A72FF;
+                                border: none;
+                                font-weight: 700;
+
+                                &.personal-use {
+                                    background-image: url('../images/user-profile-blue.svg');
+                                }
+                                &.gift {
+                                    background-image: url('../images/gift-blue.svg');
+                                }
+                            }
+                        }
+
+                        span {
+                            background-repeat: no-repeat;
+                            background-position: left 50%;
+                            background-size: 16px;
+                            padding-left: 20px;
+                            color: #6d7694;
+                            transition: all .3s ease;
+
+                            @include media-mx(767) {
+                                font-size: 14px;
+                            }
+
+                            &.personal-use {
+                                background-image: url('../images/user-profile.svg');
+                            }
+                            &.gift {
+                                background-image: url('../images/gift.svg');
+                            }
+                        }
+                    }
+
+                    // .personal-use {
+                    //     display: flex;
+                    //     align-items: center;
+                    //     gap: 6px;
+
+                    //     img {
+                    //         width: 16px;
+                    //         height: 16px;
+                    //         object-fit: contain;
+                    //     }
+
+                    //     span {
+                    //         color: #4A72FF;
+                    //         font-size: 14px;
+                    //         font-weight: 700;
+                    //     }
+                    // }
+
+                    // .gift {
+                    //     display: flex;
+                    //     align-items: center;
+                    //     gap: 3px;
+
+                    //     img {
+                    //         width: 16px;
+                    //         height: 16px;
+                    //         object-fit: contain;
+                    //     }
+
+                    //     span {
+                    //         color: #0C1B4D;
+                    //         border-bottom: 1px solid #0C1B4D;
+                    //         font-size: 14px;
+                    //         font-weight: 400;
+                    //     }
+                    // }
                 }
 
                 &_box {
