@@ -8,10 +8,10 @@
   <title>Home</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css?_v=20240415145031" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="stylesheet" href="css/main.min.css?_v=20240415145031">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css?_v=20240416161043" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/main.min.css?_v=20240416161043">
 
-  <script defer="defer" src="js/main.min.js?_v=20240415145031"></script>
+  <script defer="defer" src="js/main.min.js?_v=20240416161043"></script>
 </head>
 
   <body>
@@ -19,7 +19,12 @@
       <header class="header">
   <div class="header__container">
       <div class="header_wrapper">
-          <a href="/" class="header__logo">Logo</a>
+          <a href="/" class="header__logo">
+            <picture>
+                <source srcset="images/logo-min.svg" media="(max-width: 991px)">
+                <img src="images/logo.svg" alt="">
+            </picture>
+          </a>
           <div class="header__menu">
               <ul class="menu">
                   <li class="active"><a href="#">Buy Voucher</a></li>
@@ -113,7 +118,7 @@
                                             <div class="buy-box__methode">
                                                 <label>
                                                     <input name="pay" type="radio">
-                                                    <span><img src="images/visamc.svg" alt=""> Card Payment</span>
+                                                    <span><img src="images/visamc.svg" alt=""></span>
                                                 </label>
                                                 <label>
                                                     <input name="pay" type="radio">
@@ -122,6 +127,10 @@
                                                 <label>
                                                     <input name="pay" type="radio">
                                                     <span><img src="images/apple-pay.svg" alt=""></span>
+                                                </label>
+                                                <label>
+                                                    <input name="pay" type="radio">
+                                                    <span class="bt"><img src="images/apple-pay.svg" alt=""> Bank transfer</span>
                                                 </label>
                                             </div>
                                         </div>
@@ -444,7 +453,7 @@
 </footer>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js?_v=20240415145031" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js?_v=20240416161043" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <div class="popup" data-popup="popup-1" data-close-overlay>
     <div class="popup__wrapper" data-close-overlay>
