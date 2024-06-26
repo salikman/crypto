@@ -485,7 +485,7 @@
                         line-height: 17px;
                     }
 
-                    label {
+                    label { 
                         width: 100%;
 
                         input {
@@ -499,6 +499,14 @@
                             font-size: 16px;
                             line-height: 1.2;
                         }
+
+                        &.phone-mask {
+                            position: relative;
+                            
+                            input {
+                                padding-left: 50px;
+                            }
+                        }
                     }
                 }
 
@@ -507,6 +515,10 @@
                     grid-template-columns: repeat(2, 1fr);
                     gap: 5px;
                     margin-top: 15px;
+
+                    @include media-mx(475) {
+                        grid-template-columns: 1fr;
+                    }
                 }
             }
 
